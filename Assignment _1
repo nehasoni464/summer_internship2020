@@ -1,0 +1,53 @@
+## LINUX AND NETWORKING ASSIGNMENTS:
+
+# TASK_1: CREATE DIRECTORY STRUCTURE
+CODE::
+mkdir -p A/{B/{D/{I/{M/{Z}},J/{L}},E/{H/{L/{Z}}}},C/{F/{H},G/{K}}}
+OUTPUT::
+21 directories 0 files
+
+
+#TASK_2: PERMISSION FOR DATE COMMAND:
+CODE::
+which date
+o/p :: /usr/bin/date
+chmod -x /usr/bin/date
+## add user name:: neha
+useradd -s /usr/bin/date neha
+setfacl -m u:neha:rwx /usr/bin/date
+su - neha 
+OUTPUT:
+Sun 12 Apr 2020 1:02:03 PM CDT
+ 
+ 
+ 
+ 
+ #TASK_3: USER DATA COPY
+ code:
+ adduser client1
+ su client1
+ mkdir d1
+ adduser client2
+ su client2 
+ cp -r /home/client1/d1 /home/client2
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ #TASK 4 :RUN Cal COMMAND FOR 10 SEC AND STORE OUTPUT IN A FILE---
+ FILE NAME task4.txt
+ CODE:: watch -n10 cal > /root/Desktop/task4.txt
+ 
+ 
+OUTPUT::
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[H[2JEvery 10.0s: cal[1;121Hkali: Sun Apr 12 14:09:27 2020[3;6HApril 2020
+[4dSu Mo Tu We Th Fr Sa[5;11H1  2  3  4
+[6d 5  6  7  8  9 10 11
+[7d_ 1_ 2 13 14 15 16 17 18
+[8d19 20 21 22 23 24 25
+[9d26 27 28 29 30[38;150H[1;144H3[38;150H[1;144H4[38;150H[1;144H5[38;150H[1;141H10:0[38;150H[1;144H1[38;150H[1;144H2[38;150H[1;144H3[38;150H[1;144H4[38;150H[38;1H[?1049l[23;0;0t
+[?1l>
+ 
